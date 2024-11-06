@@ -8,10 +8,7 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.zerock.boardex_1.domain.Board;
-import org.zerock.boardex_1.dto.BoardDTO;
-import org.zerock.boardex_1.dto.BoardListReplyCountDTO;
-import org.zerock.boardex_1.dto.PageRequestDTO;
-import org.zerock.boardex_1.dto.PageResponseDTO;
+import org.zerock.boardex_1.dto.*;
 import org.zerock.boardex_1.repository.BoardRepository;
 
 import java.util.List;
@@ -100,5 +97,11 @@ public class BoardServiceImpl implements BoardService {
                 .dtoList(result.getContent())
                 .total((int)result.getTotalElements())
                 .build();
+    }
+
+    @Override
+    public PageResponseDTO<BoardListAllDTO> listWithAll(PageRequestDTO pageRequestDTO) {
+
+        return null;
     }
 }

@@ -1,10 +1,7 @@
 package org.zerock.boardex_1.service;
 
-import org.zerock.boardex_1.dto.BoardDTO;
-//import org.zerock.boardex_1.dto.BoardListReplyCountDTO;
-import org.zerock.boardex_1.dto.BoardListReplyCountDTO;
-import org.zerock.boardex_1.dto.PageRequestDTO;
-import org.zerock.boardex_1.dto.PageResponseDTO;
+import org.zerock.boardex_1.dto.*;
+
 
 public interface BoardService {
 
@@ -19,4 +16,7 @@ public interface BoardService {
     PageResponseDTO<BoardDTO> list(PageRequestDTO pageRequestDTO);
 
     PageResponseDTO<BoardListReplyCountDTO> listWithReplyCount(PageRequestDTO pageRequestDTO);
+
+    // 게시글의 이미지와 댓글의 숫자까지 처리
+    PageResponseDTO<BoardListAllDTO> listWithAll(PageRequestDTO pageRequestDTO);
 }
