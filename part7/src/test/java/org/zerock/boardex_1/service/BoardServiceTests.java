@@ -7,12 +7,10 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.zerock.boardex_1.domain.Board;
-import org.zerock.boardex_1.dto.BoardDTO;
-import org.zerock.boardex_1.dto.BoardListReplyCountDTO;
-import org.zerock.boardex_1.dto.PageRequestDTO;
-import org.zerock.boardex_1.dto.PageResponseDTO;
+import org.zerock.boardex_1.dto.*;
 
 import java.util.Arrays;
+import java.util.List;
 import java.util.UUID;
 
 @SpringBootTest
@@ -21,21 +19,6 @@ public class BoardServiceTests {
 
     @Autowired
     private BoardService boardService;
-
-    @Test
-    public void testRegister() {
-        log.info(boardService.getClass().getName());
-
-        BoardDTO boardDTO = BoardDTO.builder()
-                .title("Sample Title")
-                .content("Sample Content")
-                .writer("user00")
-                .build();
-
-        Long bno = boardService.register(boardDTO);
-
-        log.info("bno :" + bno);
-    }
 
     @Test
     public void testRegisterWithImages() {
@@ -63,12 +46,38 @@ public class BoardServiceTests {
     public void testModify() {
 
         BoardDTO boardDTO = BoardDTO.builder()
-                .bno(101L)
+                .bno(99L)
                 .title("Updated 101")
                 .content("Updated Content 101")
                 .build();
 
+        boardDTO.setFileNames(Arrays.asList(UUID.randomUUID()+"_zzz.jpg"));
+
         boardService.modify(boardDTO);
+    }
+
+    @Test
+    public void testReadAll() {
+
+        Long bno = 99L;
+
+        BoardDTO boardDTO = boardService.readOne(bno);
+
+        log.info(boardDTO);
+
+        for(String fileName : boardDTO.getFileNames()) {
+            log.info(fileName);
+        }
+
+    }
+
+    @Test
+    public void testRemoveAll() {
+
+        Long bno = 99L;
+
+        boardService.remove(bno);
+
     }
 
     @Test
@@ -87,18 +96,28 @@ public class BoardServiceTests {
     }
 
     @Test
-    public void testListWithReplyCount() {
+    public void testListWithAll() {
         PageRequestDTO pageRequestDTO = PageRequestDTO.builder()
                 .page(1)
                 .size(10)
-                .type("tcw")
-                .keyword("9")
-                .link(null)
                 .build();
 
-        PageResponseDTO<BoardListReplyCountDTO> result = boardService.listWithReplyCount(pageRequestDTO);
+        PageResponseDTO<BoardListAllDTO> responseDTO = boardService.listWithAll(pageRequestDTO);
 
-        log.info(result);
+        List<BoardListAllDTO> dtoList = responseDTO.getDtoList();
 
+        dtoList.forEach(boardListAllDTO -> {
+            log.info(boardListAllDTO.getBno() + ":" + boardListAllDTO.getTitle());
+
+            if(boardListAllDTO.getBoardImages() != null) {
+                for (BoardImageDTO boardImageDTO : boardListAllDTO.getBoardImages() ){
+                    log.info(boardImageDTO);
+                }
+            }
+
+            log.info("--------------------------------------");
+        });
     }
+
+
 }
