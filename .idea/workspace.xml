@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3b947aa1-fc5e-4aa8-b64f-e5d384802aa0" name="변경" comment="">
+      <change beforePath="$PROJECT_DIR$/part7/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part7/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part7/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part7/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part7/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part7/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part7/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part7/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part7/src/main/generated/org/zerock/boardex_1/domain/QBaseEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part7/src/main/generated/org/zerock/boardex_1/domain/QBoard.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part7/src/main/generated/org/zerock/boardex_1/domain/QBoardImage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part7/src/main/generated/org/zerock/boardex_1/domain/QReply.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part7/src/main/java/org/zerock/boardex_1/Boardex1Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part7/src/main/java/org/zerock/boardex_1/config/RootConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part7/src/main/java/org/zerock/boardex_1/controller/BoardController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part7/src/main/java/org/zerock/boardex_1/controller/ReplyController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part7/src/main/java/org/zerock/boardex_1/controller/UpDownController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part7/src/main/java/org/zerock/boardex_1/controller/advice/CustomRestAdvice.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part7/src/main/java/org/zerock/boardex_1/domain/BaseEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part7/src/main/java/org/zerock/boardex_1/domain/Board.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part7/src/main/java/org/zerock/boardex_1/domain/BoardImage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part7/src/main/java/org/zerock/boardex_1/domain/Reply.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part7/src/main/java/org/zerock/boardex_1/dto/BoardDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part7/src/main/java/org/zerock/boardex_1/dto/BoardImageDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part7/src/main/java/org/zerock/boardex_1/dto/BoardListAllDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part7/src/main/java/org/zerock/boardex_1/dto/BoardListReplyCountDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part7/src/main/java/org/zerock/boardex_1/dto/PageRequestDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part7/src/main/java/org/zerock/boardex_1/dto/PageResponseDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part7/src/main/java/org/zerock/boardex_1/dto/ReplyDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part7/src/main/java/org/zerock/boardex_1/dto/upload/UploadFileDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part7/src/main/java/org/zerock/boardex_1/dto/upload/UploadResultDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part7/src/main/java/org/zerock/boardex_1/repository/BoardRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part7/src/main/java/org/zerock/boardex_1/repository/ReplyRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part7/src/main/java/org/zerock/boardex_1/repository/search/BoardSearch.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part7/src/main/java/org/zerock/boardex_1/repository/search/BoardSearchImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part7/src/main/java/org/zerock/boardex_1/service/BoardService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part7/src/main/java/org/zerock/boardex_1/service/BoardServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part7/src/main/java/org/zerock/boardex_1/service/ReplyService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part7/src/main/java/org/zerock/boardex_1/service/ReplyServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part7/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part7/src/main/resources/static/assets/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part7/src/main/resources/static/css/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part7/src/main/resources/static/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part7/src/main/resources/static/js/reply.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part7/src/main/resources/static/js/scripts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part7/src/main/resources/static/js/upload.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part7/src/main/resources/templates/board/list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part7/src/main/resources/templates/board/modify.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part7/src/main/resources/templates/board/read.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part7/src/main/resources/templates/board/register.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part7/src/main/resources/templates/layout/basic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part7/src/main/resources/templates/layout/layout1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part7/src/test/java/org/zerock/boardex_1/Boardex1ApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part7/src/test/java/org/zerock/boardex_1/repository/BoardRepositoryTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part7/src/test/java/org/zerock/boardex_1/repository/ReplyRepositoryTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part7/src/test/java/org/zerock/boardex_1/service/BoardServiceTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part7/src/test/java/org/zerock/boardex_1/service/ReplyServiceTests.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;smd995&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/smd995/FileUploadExRepo.git&quot;,
+    &quot;accountId&quot;: &quot;94cedf1f-34c7-4432-a8ca-86cfe9c94bf8&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2p8ZgWWMyy7uHUjv5BYocmNErjM" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/smd99/Projects/Java/SpringSecurity/part8/build.gradle",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "전역 라이브러리",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.18034.62" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.18034.62" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="디폴트 작업">
+      <changelist id="3b947aa1-fc5e-4aa8-b64f-e5d384802aa0" name="변경" comment="" />
+      <created>1732149775144</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1732149775144</updated>
+      <workItem from="1732149777683" duration="167000" />
+      <workItem from="1732149968046" duration="134000" />
+      <workItem from="1732150108771" duration="21000" />
+      <workItem from="1732150170455" duration="102000" />
+      <workItem from="1732150305760" duration="64000" />
+      <workItem from="1732150495679" duration="180000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
