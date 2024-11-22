@@ -69,6 +69,10 @@ dependencies {
 
     implementation 'org.thymeleaf.extras:thymeleaf-extras-springsecurity6'
 
+    // https://mvnrepository.com/artifact/org.springframework.security/spring-security-oauth2-client
+    implementation group: 'org.springframework.security', name: 'spring-security-oauth2-client', version: '6.3.4'
+
+
 }
 
 tasks.named('test') {
