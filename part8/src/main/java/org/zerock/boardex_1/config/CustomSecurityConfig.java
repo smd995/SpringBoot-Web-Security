@@ -65,6 +65,8 @@ public class CustomSecurityConfig {
                 .userDetailsService(customUserDetailsService)
                 .exceptionHandling(e -> e
                         .accessDeniedHandler(accessDeniedHandler()))
+                .oauth2Login(oauth -> oauth
+                        .loginPage("/member/login"))
                 .build();
     }
 
