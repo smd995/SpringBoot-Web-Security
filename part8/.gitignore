@@ -36,5 +36,5 @@ out/
 ### VS Code ###
 .vscode/
 
-### api key 제외 ###
-!**/src/main/**/application.properties
+# application.properties 파일 무시
+src/main/resources/application.properties
