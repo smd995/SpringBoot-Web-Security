@@ -43,7 +43,7 @@ public class CustomSecurityConfig {
         return http
                 .csrf(csrf -> csrf.disable())
                 .authorizeHttpRequests(auth -> auth
-                        .requestMatchers("/member/login", "/member/register", "/static/**").permitAll() // 공개적으로 허용할 URL
+                        .requestMatchers("/member/login", "/member/join", "/static/**").permitAll() // 공개적으로 허용할 URL
                         .anyRequest().authenticated() // 나머지 요청은 인증 필요
                 )
                 .formLogin(form -> form
