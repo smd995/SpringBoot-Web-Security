@@ -48,7 +48,7 @@ public class CustomSecurityConfig {
                 )
                 .formLogin(form -> form
                         .loginPage("/member/login")
-                        .failureUrl("/member/login.html?error=true")
+                        .failureUrl("/member/login?error=true")
                         .usernameParameter("username")
                         .passwordParameter("password")
                 ).logout(logout -> logout
