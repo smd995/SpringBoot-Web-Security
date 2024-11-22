@@ -18,7 +18,7 @@ import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 import java.util.stream.IntStream;
-
+// 테스트진행중
 @SpringBootTest
 @Log4j2
 public class BoardRepositoryTests {
