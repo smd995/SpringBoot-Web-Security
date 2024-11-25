@@ -78,7 +78,7 @@ public class CustomOAuth2UserService extends DefaultOAuth2UserService {
 
             // MemberSecurityDTO 구성 및 반환
             MemberSecurityDTO memberSecurityDTO =
-                    new MemberSecurityDTO(nickname, "1111", nickname, false, true, Arrays
+                    new MemberSecurityDTO(nickname, "1111", nickname + "@example.com", false, true, Arrays
                             .asList(new SimpleGrantedAuthority("ROLE_USER")));
             memberSecurityDTO.setProps(params);
 
@@ -102,21 +102,23 @@ public class CustomOAuth2UserService extends DefaultOAuth2UserService {
     }
 
     private String getKakaoNickName(Map<String, Object> paramMap) {
-
         log.info("KAKAO----------------------------------------");
 
         Object value = paramMap.get("kakao_account");
-
         log.info(value);
 
         LinkedHashMap accountMap = (LinkedHashMap) value;
 
-        String nickname = (String) accountMap.get("nickname");
+        // profile을 가져옵니다.
+        LinkedHashMap profileMap = (LinkedHashMap) accountMap.get("profile");
+
+        // profile에서 nickname을 추출합니다.
+        String nickname = (String) profileMap.get("nickname");
 
         log.info("nickname: " + nickname);
 
         return nickname;
-
     }
+
 
 }
